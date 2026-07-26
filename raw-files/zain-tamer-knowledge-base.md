@@ -1,10 +1,39 @@
+---
+name: Zain Tamer Zain ElAbdin
+profession:
+  - AI Engineer 
+  - AI Researcher
+  - Machine Learning Engineer
+  - Machine Learning Researcher
+  - MLOPS Engineer
+  - Computer Engineering Student
+keywords:
+  - Machine Learning
+  - Deep Learning
+  - Computer Vision
+  - NLP
+  - Large Language Models
+  - RAG
+  - MLOps
+  - AWS
+  - Azure
+  - Docker
+  - Kubernetes
+  - Competitive Programming
+  - Research
+  - Linux
+aliases:
+  - Zain
+  - Zain Tamer
+updated: 2026-07-26
+---
 # Zain Tamer Zain Elabdin — Complete Personal Knowledge Base
 
 > This document is the single source of truth for a RAG bot that answers questions about Zain Tamer. It covers identity, education, experience, projects, research, skills, competitions, certifications, volunteering, hobbies, tools, and personality.
 
 ---
 
-## 1. Personal Identity & Contact
+## Personal Identity & Contact
 
 | Field | Detail |
 |---|---|
@@ -22,7 +51,7 @@
 
 ---
 
-## 2. Education
+## Education
 
 ### University — Arab Academy for Science, Technology & Maritime Transport (AAST)
 - **Degree:** Bachelor of Science in Computer Engineering
@@ -114,7 +143,7 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 - Learned to collaborate with students from diverse backgrounds
 ---
 
-## 3. Work Experience
+## Work Experience
 
 ### Machine Learning Engineer Intern — Digital Egypt Pioneers Initiative (DEPI)
 - **Duration:** June 2025 – December 2025
@@ -130,9 +159,9 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 
 ---
 
-## 4. Projects
+## Projects
 
-### 4.1 Premier League Predictor — End-to-End MLOps System
+### Premier League Predictor — End-to-End MLOps System
 - **GitHub:** github.com/Zain3627/pl_predictor
 - **Goal:** Predict Premier League match outcomes and project final league standings
 - **Tech Stack:** Python 3.10, ZenML, MLflow, XGBoost, RandomForest, LogisticRegression, pandas, NumPy, Supabase (PostgreSQL via psycopg2), Pydantic, Streamlit
@@ -148,7 +177,8 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 
 ---
 
-### 4.2 FPL Vision — AI-Powered Fantasy Premier League Assistant
+### FPL Vision — AI-Powered Fantasy Premier League Assistant
+- **GitHub:** https://github.com/Zain3627/Fantasy_Premier_League_Predictor
 - **Goal:** Help Fantasy Premier League managers make data-driven decisions
 - **What it does:** Generates player recommendations and expected points projections
 - **Model:** Fine-tuned XGBoost classifier
@@ -159,7 +189,8 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 
 ---
 
-### 4.3 Facial Recognition System
+### Facial Recognition System
+- **GitHub:** https://github.com/Zain3627/Facial-Recognition-System
 - **Goal:** Real-time facial recognition for multiple identities
 - **Model:** Pre-trained **FaceNet** backbone with fine-tuned transfer learning classification head
 - **Dataset:** LFW dataset — 303 identities, 640 embeddings
@@ -170,7 +201,7 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 
 ---
 
-### 4.4 Vision Transformer — Blood Cell Classification (Academic)
+### Vision Transformer — Blood Cell Classification (Academic)
 - **Task:** 8-class blood cell classification on the **BloodMNIST** dataset (MedMNIST benchmark)
 - **Models compared:** ViT-B/16 (fine-tuned) vs. Swin Transformer-B vs. ResNet-50 (baseline)
 - **Accuracy achieved:** 98.54% with ViT-B/16
@@ -178,7 +209,7 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 
 ---
 
-### 4.5 Pose-Based Sports Action Recognition (HCI Academic Project)
+### Pose-Based Sports Action Recognition (HCI Academic Project)
 - **Dataset:** Penn Action dataset
 - **Task:** Recognize 15 sport classes from pose keypoints
 - **Models:** LSTM (Model A) vs. GRU (Model B) — identical hyperparameters, comparative evaluation
@@ -186,7 +217,7 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 
 ---
 
-### 4.6 Kubernetes/Kafka Distributed Weather Station Pipeline (Academic)
+### Kubernetes/Kafka Distributed Weather Station Pipeline (Academic)
 - **Goal:** IoT-style weather data pipeline using distributed systems
 - **Stack:** Java microservices (WeatherStation producers, KafkaProcessor, CentralStation consumer), PostgreSQL, Minikube with Docker driver, Kafka
 - **Kubernetes objects used:** ConfigMaps, Secrets, PVCs, Services, StatefulSets
@@ -194,14 +225,16 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 
 ---
 
-### 4.7 WHO COVID-19 Global Daily Data Analysis
+### WHO COVID-19 Global Daily Data Analysis
+- **GitHub:** https://github.com/Zain3627/WHO-COVID-19-global-daily-data-analysis-project
 - **Dataset:** WHO global COVID-19 dataset — 250,000+ daily records across 200+ countries/regions
 - **Work:** In-depth EDA — data cleaning, feature engineering, statistical visualization
 - **Goal:** Uncover insights about global case trends and country-level patterns
 
 ---
 
-### 4.8 Chat Room (LAN Real-Time Communication)
+### Chat Room (LAN Real-Time Communication)
+- **GitHub:** https://github.com/Zain3627/Chatroom
 - **Goal:** LAN-based real-time chatroom supporting text, voice, and video
 - **Stack:** Python, socket programming
 - **Capacity:** Up to 10 concurrent users with seamless media switching
@@ -209,7 +242,7 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 
 ---
 
-### 4.9 Autonomous Point-to-Point Smart Car
+### Autonomous Point-to-Point Smart Car
 - **Goal:** Autonomous ground vehicle that navigates to user-specified 2D coordinates
 - **Hardware:** Arduino with onboard IMU-based localization and motion control
 - **Communication:** MQTT protocol for wireless commands; voice recognition service for voice-based positioning
@@ -217,7 +250,7 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 
 ---
 
-## 5. Research
+## Research
 
 ### Research Interests
 - Large Language Models
@@ -229,7 +262,7 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 - AI Agents
 - Sports Analytics
 
-### 5.1 AI Research Notes & Paper Reproductions
+### AI Research Notes & Paper Reproductions
 
 GitHub: https://github.com/Zain3627/ai-research-summary
 
@@ -240,7 +273,8 @@ An ongoing collection of structured analyses and reproductions of influential AI
 - Reproduces selected papers to verify published results.
 - Maintains a long-term AI research knowledge base.
 
-### 5.2 Data Augmentation & Hyperparameter Tuning for Image Classification
+### Data Augmentation & Hyperparameter Tuning for Image Classification
+- **GitHub:** https://github.com/Zain3627/An-Experimental-Analysis-of-Data-Augmentation-and-Hyperparameter-Tuning-for-Image-Classification
 - **Duration:** October 2025 – December 2025
 - **Co-author:** Adham Mahmoud Waheeb
 - **Dataset:** Caltech-101
@@ -249,14 +283,15 @@ An ongoing collection of structured analyses and reproductions of influential AI
   - Proposed and evaluated new augmentation methods: **Pairwise Channel Transfer**, **Object Occlusion**, **Novel Masking**
   - Studied the contribution of each augmentation technique to model performance
 
-### 5.3 Comparison of Quicksort and BFPRT for the K-th Element Selection Problem
+### Comparison of Quicksort and BFPRT for the K-th Element Selection Problem
+- **GitHub:** https://github.com/Zain3627/quicksort-bfprt-kth-selection-analysis
 - **Date:** February 2025
 - **Focus:** Algorithmic analysis of selection problem solutions
 - **Content:** Performance comparison of Quicksort vs. BFPRT (Median of Medians) with respect to problem size
 
 ---
 
-## 6. Technical Skills
+## Technical Skills
 
 ### Programming Languages
 - Python (primary), C, C++, C#, Java, SQL, Bash
@@ -294,7 +329,7 @@ An ongoing collection of structured analyses and reproductions of influential AI
 
 ---
 
-## 7. Soft Skills
+## Soft Skills
 - **Leadership** — coaches a CP club, led cloud workshops, mentored 30+ students
 - **Communication** — explains complex ML and algorithm topics to beginners
 - **Teamwork** — co-authored research, collaborated on group academic projects
@@ -304,7 +339,7 @@ An ongoing collection of structured analyses and reproductions of influential AI
 
 ---
 
-## 8. Languages
+## Languages
 | Language | Level |
 |---|---|
 | Arabic | Native |
@@ -313,7 +348,7 @@ An ongoing collection of structured analyses and reproductions of influential AI
 
 ---
 
-## 9. Competitions & Achievements & Honors
+## Competitions & Achievements & Honors
 
 | Competition / Achievement | Date | Result |
 |---|---|---|
@@ -325,7 +360,7 @@ An ongoing collection of structured analyses and reproductions of influential AI
 
 ---
 
-## 10. Certificates & Courses 
+## Certificates & Courses 
 
 | Certificate | Issuer | Date |
 |---|---|---|
@@ -336,7 +371,7 @@ An ongoing collection of structured analyses and reproductions of influential AI
 
 ---
 
-## 11. Volunteering & Leadership
+## Volunteering & Leadership
 
 ### AWS Student Builder Group at AAST — Team Member
 - **Duration:** March 2026 – Present
@@ -355,12 +390,12 @@ An ongoing collection of structured analyses and reproductions of influential AI
 
 ---
 
-## 12. Development Environment & Setup
+## Development Environment & Setup
 
 - **OS:** Arch Linux by the way 
 ---
 
-## 13. Interests & Hobbies
+## Interests & Hobbies
 
 ### Football / Soccer
 - Passionate football fan and analyst who supports Al-Ahly in Egypt.
@@ -381,7 +416,7 @@ An ongoing collection of structured analyses and reproductions of influential AI
 
 ---
 
-## 14. Personality & Character
+## Personality & Character
 
 - **Methodical builder:** Prefers shipping complete systems over toy demos — projects have proper pipelines, CI/CD, and cloud deployment.
 - **Lifelong learner:** Simultaneously studies ML deployment, distributed systems, cybersecurity, and algorithms — not just surface-level.
@@ -400,7 +435,7 @@ An ongoing collection of structured analyses and reproductions of influential AI
 
 ---
 
-## 15. Current Focus Areas (as of mid-2026)
+## Current Focus Areas (as of mid-2026)
 
 - Completing Computer Engineering degree at AAST (graduating ~early 2027)
 - Deepening expertise in ML deployment: AWS Bedrock, SageMaker, vLLM, RAG systems
@@ -412,7 +447,7 @@ An ongoing collection of structured analyses and reproductions of influential AI
 
 ---
 
-## 16. Goals & Aspirations
+## Goals & Aspirations
 
 - Become a production-grade ML/MLOps Engineer working on real-world AI systems at scale
 - Bridge the gap between research and deployment — build things that actually run in production
@@ -426,7 +461,7 @@ An ongoing collection of structured analyses and reproductions of influential AI
 
 ---
 
-## 17. Additional Sections
+## Additional Sections
 
 ### Learning Philosophy
 
