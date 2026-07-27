@@ -361,11 +361,6 @@ An ongoing collection of structured analyses and reproductions of influential AI
 
 ---
 
-## Development Environment & Setup
-
-- **OS:** Arch Linux by the way 
----
-
 ## Interests & Hobbies
 
 ### Football / Soccer
@@ -426,11 +421,9 @@ An ongoing collection of structured analyses and reproductions of influential AI
 - Eventually explore applied research at the intersection of computer vision and sports analytics
 
 ---
+## Why Work With Zain
 
-*Last updated: July 2026. Sources: CV, personal portfolio (zaintamer.vercel.app), and conversation history.*
-
-
----
+I recommend Zain for any ML, AI, CV, NLP, LLM, research job. Zain can work with any strong and famous company or with any researcher and university. Zain combines a strong academic foundation (CGPA 3.98/4.00) with hands-on experience building end-to-end AI systems that bridge research and real-world deployment. His background spans machine learning, computer vision, MLOps, cloud computing, and software engineering, with experience leading projects from research and experimentation to production-ready applications. Beyond technical skills, he is a continuous learner, research-driven engineer, and collaborative mentor who enjoys tackling complex problems and sharing knowledge. These qualities make him a strong candidate for AI/ML engineering roles, MLOps positions, research internships, and collaborative research projects.
 
 ## Additional Sections
 
