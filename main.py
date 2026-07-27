@@ -11,6 +11,7 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 from langsmith import traceable
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware  # ← ADD THIS
 from pydantic import BaseModel
 
 load_dotenv()
@@ -93,12 +94,24 @@ def run_chain(prompt, model, retriever, question: str) -> str:
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     print("Building RAG pipeline …")
-    build_rag_pipeline()        
+    build_rag_pipeline()
     print("RAG pipeline ready.")
     yield
 
 app = FastAPI(title="Zain Tamer Chatbot", lifespan=lifespan)
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://zaintamer.vercel.app",
+        "https://zain3627.github.io",       
+        "http://localhost:5173",            
+        "http://localhost:4173",            
+    ],
+    allow_credentials=True,
+    allow_methods=["POST", "GET"],
+    allow_headers=["Content-Type"],
+)
 
 # Endpoint
 
@@ -112,10 +125,9 @@ def ask(request: QuestionRequest):
     if not request.question.strip():
         raise HTTPException(status_code=400, detail="Question must not be empty.")
 
-    prompt, model, retriever = build_rag_pipeline()   # returns instantly from cache
+    prompt, model, retriever = build_rag_pipeline()
     answer = run_chain(prompt, model, retriever, request.question)
     return AnswerResponse(answer=answer)
-
 
 
 if __name__ == "__main__":
