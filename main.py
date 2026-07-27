@@ -13,6 +13,8 @@ from langsmith import traceable
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware  # ← ADD THIS
 from pydantic import BaseModel
+from langchain_community.retrievers import BM25Retriever
+from langchain_classic.retrievers.ensemble import EnsembleRetriever
 
 load_dotenv()
 file_path = "raw-files/zain-tamer-knowledge-base.md"
@@ -43,8 +45,18 @@ def chunk_docs(docs):
 
 def wrap_retriever(split_docs):
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+
     vectorstore = FAISS.from_documents(split_docs, embeddings)
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
+    dense_retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
+
+    bm25_retriever = BM25Retriever.from_documents(split_docs)
+    bm25_retriever.k = 5
+
+    retriever = EnsembleRetriever(
+        retrievers=[bm25_retriever, dense_retriever],
+        weights=[0.5, 0.5]   # tune: raise BM25 weight for keyword-heavy queries
+    )
+
     return retriever
 
 def initialize_model():
