@@ -1,40 +1,6 @@
----
-name: Zain Tamer Zain ElAbdin
-profession:
-  - AI Engineer 
-  - AI Researcher
-  - Machine Learning Engineer
-  - Machine Learning Researcher
-  - MLOPS Engineer
-  - Computer Engineering Student
-keywords:
-  - Machine Learning
-  - Deep Learning
-  - Computer Vision
-  - NLP
-  - Large Language Models
-  - RAG
-  - MLOps
-  - AWS
-  - Azure
-  - Docker
-  - Kubernetes
-  - Competitive Programming
-  - Research
-  - Linux
-aliases:
-  - Zain
-  - Zain Tamer
-updated: 2026-07-26
----
 # Zain Tamer Zain Elabdin — Complete Personal Knowledge Base
-
-> This document is the single source of truth for a RAG bot that answers questions about Zain Tamer. It covers identity, education, experience, projects, research, skills, competitions, certifications, volunteering, hobbies, tools, and personality.
-
 ---
-
 ## Personal Identity & Contact
-
 | Field | Detail |
 |---|---|
 | Full Name | Zain Tamer Zain Elabdin |
@@ -161,7 +127,8 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 
 ## Projects
 
-### Premier League Predictor — End-to-End MLOps System
+### Project 1: Premier League Predictor — End-to-End MLOps System
+This is one of Zain's projects. This project is called Premier League Predictor.
 - **GitHub:** github.com/Zain3627/pl_predictor
 - **Goal:** Predict Premier League match outcomes and project final league standings
 - **Tech Stack:** Python 3.10, ZenML, MLflow, XGBoost, RandomForest, LogisticRegression, pandas, NumPy, Supabase (PostgreSQL via psycopg2), Pydantic, Streamlit
@@ -171,45 +138,48 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 - **MLflow:** Tracks experiments and model registry; automatically promotes the highest-accuracy model to a champion alias
 - **Storage:** Supabase PostgreSQL for processed datasets; AWS S3 for MLflow artifacts
 - **Deployment:** Containerized with Docker, pushed to AWS ECR, deployed to AWS EC2
-- **Automation:** Cron-based scheduling (`0 1 * * 2`) — triggers full retraining when live prediction accuracy drops below threshold
+- **Automation:** Cron-based scheduling — triggers full retraining when live prediction accuracy drops below threshold
 - **Dashboard:** Streamlit frontend for match predictions and league table projections
-- **Additional exploration:** Studied the SoccerNet dataset for football analytics extension (player re-identification, tracking); reviewed the PRTReID/PRT-Track multi-task learning paper
 
 ---
 
-### FPL Vision — AI-Powered Fantasy Premier League Assistant
+### Project 2: FPL Vision — AI-Powered Fantasy Premier League Assistant
+This is one of Zain's projects. This project is called FPL Vision.
 - **GitHub:** https://github.com/Zain3627/Fantasy_Premier_League_Predictor
 - **Goal:** Help Fantasy Premier League managers make data-driven decisions
 - **What it does:** Generates player recommendations and expected points projections
 - **Model:** Fine-tuned XGBoost classifier
-- **Data:** Aggregated from the FPL REST API across 700+ players and 20 teams; features from historical performance, fixtures, and player form
-- **Deployment:** Streamlit app on **Azure App Service**; artifacts and datasets on **Azure Blob Storage**
+- **Data:** Aggregated from the FPL REST API across 700+ players and 20 teams
+- **Deployment:** Streamlit app on Azure App Service; artifacts on Azure Blob Storage
 - **CI/CD:** GitHub Actions — auto-deploys on data change or code update
 - **Frontend:** Live dashboards for player and team statistics
 
 ---
 
-### Facial Recognition System
+### Project 3: Facial Recognition System
+This is one of Zain's projects. This project is called Facial Recognition System.
 - **GitHub:** https://github.com/Zain3627/Facial-Recognition-System
 - **Goal:** Real-time facial recognition for multiple identities
-- **Model:** Pre-trained **FaceNet** backbone with fine-tuned transfer learning classification head
+- **Model:** Pre-trained FaceNet backbone with fine-tuned transfer learning classification head
 - **Dataset:** LFW dataset — 303 identities, 640 embeddings
 - **Accuracy:** 98%
-- **Pipeline:** Multi-face detection via **MediaPipe** → 128-dimensional L2-normalized embeddings → cosine similarity matching
+- **Pipeline:** Multi-face detection via MediaPipe → 128-dimensional L2-normalized embeddings → cosine similarity matching
 - **Feature:** User registration flow supporting new identity enrollment
-- **Deployment:** Dockerized Streamlit app deployed on **Hugging Face Spaces**
+- **Deployment:** Dockerized Streamlit app deployed on Hugging Face Spaces
 
 ---
 
-### Vision Transformer — Blood Cell Classification (Academic)
-- **Task:** 8-class blood cell classification on the **BloodMNIST** dataset (MedMNIST benchmark)
+### Project 4: Vision Transformer — Blood Cell Classification
+This is one of Zain's projects. This is an academic project called Vision Transformer Blood Cell Classification.
+- **Task:** 8-class blood cell classification on the BloodMNIST dataset (MedMNIST benchmark)
 - **Models compared:** ViT-B/16 (fine-tuned) vs. Swin Transformer-B vs. ResNet-50 (baseline)
 - **Accuracy achieved:** 98.54% with ViT-B/16
-- **Hardware constraint:** 4 GB VRAM (RTX 3050 Ti); explored Kaggle free-tier GPU for overflow training
+- **Hardware constraint:** 4 GB VRAM (RTX 3050 Ti); explored Kaggle free-tier GPU for training
 
 ---
 
-### Pose-Based Sports Action Recognition (HCI Academic Project)
+### Project 5: Pose-Based Sports Action Recognition
+This is one of Zain's projects. This is an academic HCI project called Pose-Based Sports Action Recognition.
 - **Dataset:** Penn Action dataset
 - **Task:** Recognize 15 sport classes from pose keypoints
 - **Models:** LSTM (Model A) vs. GRU (Model B) — identical hyperparameters, comparative evaluation
@@ -217,15 +187,17 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 
 ---
 
-### Kubernetes/Kafka Distributed Weather Station Pipeline (Academic)
+### Project 6: Kubernetes/Kafka Distributed Weather Station Pipeline
+This is one of Zain's projects. This is an academic distributed systems project called Weather Station Pipeline.
 - **Goal:** IoT-style weather data pipeline using distributed systems
-- **Stack:** Java microservices (WeatherStation producers, KafkaProcessor, CentralStation consumer), PostgreSQL, Minikube with Docker driver, Kafka
+- **Stack:** Java microservices, PostgreSQL, Minikube, Kafka
 - **Kubernetes objects used:** ConfigMaps, Secrets, PVCs, Services, StatefulSets
 - **Environment:** Arch Linux
 
 ---
 
-### WHO COVID-19 Global Daily Data Analysis
+### Project 7: WHO COVID-19 Global Daily Data Analysis
+This is one of Zain's projects. This project is a data analysis project called WHO COVID-19 Global Daily Data Analysis.
 - **GitHub:** https://github.com/Zain3627/WHO-COVID-19-global-daily-data-analysis-project
 - **Dataset:** WHO global COVID-19 dataset — 250,000+ daily records across 200+ countries/regions
 - **Work:** In-depth EDA — data cleaning, feature engineering, statistical visualization
@@ -233,7 +205,8 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 
 ---
 
-### Chat Room (LAN Real-Time Communication)
+### Project 8: Chat Room
+This is one of Zain's projects. This project is a networking project called Chat Room.
 - **GitHub:** https://github.com/Zain3627/Chatroom
 - **Goal:** LAN-based real-time chatroom supporting text, voice, and video
 - **Stack:** Python, socket programming
@@ -242,14 +215,12 @@ A highly competitive boarding STEM school focused on project-based learning, sci
 
 ---
 
-### Autonomous Point-to-Point Smart Car
+### Project 9: Autonomous Point-to-Point Smart Car
+This is one of Zain's projects. This project is an embedded systems project called Autonomous Smart Car.
 - **Goal:** Autonomous ground vehicle that navigates to user-specified 2D coordinates
 - **Hardware:** Arduino with onboard IMU-based localization and motion control
-- **Communication:** MQTT protocol for wireless commands; voice recognition service for voice-based positioning
+- **Communication:** MQTT protocol for wireless commands; voice recognition for voice-based positioning
 - **Concepts:** Embedded control, sensor fusion, IoT communication
-
----
-
 ## Research
 
 ### Research Interests
