@@ -68,7 +68,7 @@ To demonstrate his expertise in Large Language Models (LLMs) and intelligent inf
 - **GitHub:** github.com/Zain3627/zain-chatbot/
 - **Tech Stack:** Python, RAG, FAISS, FastAPI, Hybrid Search, Docker, AWS EC2, REST API.
 - **System Architecture:**
-  - *Retrieval Pipeline:* Implemented a high-accuracy hybrid search pipeline combining dense vector retrieval (indexed via FAISS) with keyword matching. 
+  - *Retrieval Pipeline:* Implemented a high-accuracy hybrid search pipeline combining dense vector retrieval (indexed via FAISS) with keyword matching using LangChain and LangSmith. 
   - *Backend & Deployment:* Designed a modular, scalable architecture separating ingestion, retrieval, and inference components. Developed a FastAPI backend exposing REST endpoints, containerized the application with Docker, and deployed it to an AWS EC2 instance.
 - **Impact:** Delivered a production-ready LLM service featuring a chat interface and observability dashboards, demonstrating practical cloud deployment of modern GenAI applications.
 
@@ -172,7 +172,7 @@ Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Computer Vis
 - **Data Handling:** Pandas, NumPy, Matplotlib, Seaborn, Plotly.
 - **Machine Learning:** scikit-learn, XGBoost.
 - **Deep Learning & Vision:** TensorFlow, Keras, PyTorch, OpenCV, MediaPipe, FaceNet.
-- **NLP & GenAI:** HuggingFace Transformers, vLLM, Local LLMs, Agentic AI, RAG.
+- **NLP & GenAI:** HuggingFace Transformers, vLLM, Local LLMs, Agentic AI, RAG, LangChain, LangSmith
 
 ### Cloud Infrastructure & MLOps
 - **AWS:** EC2, ECR, S3, SageMaker, Bedrock, Lambda, CloudWatch, IAM.

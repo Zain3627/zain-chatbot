@@ -54,7 +54,7 @@ def chunk_docs(docs):
 
 def wrap_retriever(split_docs):
     embeddings = HuggingFaceEmbeddings(
-        model_name="intfloat/multilingual-e5-large"
+        model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
     )
 
     vectorstore = FAISS.from_documents(split_docs, embeddings)
