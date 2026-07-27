@@ -17,8 +17,12 @@ from langchain_community.retrievers import BM25Retriever
 from langchain_classic.retrievers.ensemble import EnsembleRetriever
 
 load_dotenv()
-file_path = "raw-files/zain-tamer-knowledge-base.md"
-
+file_paths = [
+    "raw-files/arabic-egypt-zain-tamer-knowledge-base.md",
+    "raw-files/arabic-zain-tamer-knowledge-base.md",
+    "raw-files/english-zain-tamer-knowledge-base.md",
+    "raw-files/franco-arabic-zain-tamer-knowledge-base.md",
+]
 class QuestionRequest(BaseModel):
     question: str
 
@@ -29,9 +33,11 @@ class AnswerResponse(BaseModel):
 # RAG pipeline methods
 
 def document_loader():
-    loader = TextLoader(file_path, encoding="utf-8")
-    docs = loader.load()
-    return docs
+    all_docs = []
+    for path in file_paths:
+        loader = TextLoader(path, encoding="utf-8")
+        all_docs.extend(loader.load())
+    return all_docs
 
 def chunk_docs(docs):
     headers_to_split_on = [
@@ -40,11 +46,16 @@ def chunk_docs(docs):
         ("###", "subsection"),
     ]
     markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on)
-    split_docs = markdown_splitter.split_text(docs)
-    return split_docs
+    all_chunks = []
+    for doc in docs:                                    # ← iterate all docs now
+        chunks = markdown_splitter.split_text(doc.page_content)
+        all_chunks.extend(chunks)
+    return all_chunks
 
 def wrap_retriever(split_docs):
-    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    embeddings = HuggingFaceEmbeddings(
+        model_name="intfloat/multilingual-e5-large"
+    )
 
     vectorstore = FAISS.from_documents(split_docs, embeddings)
     dense_retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
@@ -85,7 +96,7 @@ def merge_selected_chunks(docs):
 @lru_cache(maxsize=1)
 def build_rag_pipeline():
     docs = document_loader()
-    split_docs = chunk_docs(docs[0].page_content)
+    split_docs = chunk_docs(docs) 
     retriever = wrap_retriever(split_docs)
     prompt, model = initialize_model()
     return prompt, model, retriever

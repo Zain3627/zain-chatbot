@@ -62,8 +62,19 @@
 
 ## Machine Learning & Software Projects
 
+### Project: RAG Knowledge Base Chatbot
+To demonstrate his expertise in Large Language Models (LLMs) and intelligent information retrieval, Zain built a production-ready Retrieval-Augmented Generation (RAG) chatbot capable of answering questions over custom documents.
+- **Date:** 2026
+- **GitHub:** github.com/Zain3627/zain-chatbot/
+- **Tech Stack:** Python, RAG, FAISS, FastAPI, Hybrid Search, Docker, AWS EC2, REST API.
+- **System Architecture:**
+  - *Retrieval Pipeline:* Implemented a high-accuracy hybrid search pipeline combining dense vector retrieval (indexed via FAISS) with keyword matching. 
+  - *Backend & Deployment:* Designed a modular, scalable architecture separating ingestion, retrieval, and inference components. Developed a FastAPI backend exposing REST endpoints, containerized the application with Docker, and deployed it to an AWS EC2 instance.
+- **Impact:** Delivered a production-ready LLM service featuring a chat interface and observability dashboards, demonstrating practical cloud deployment of modern GenAI applications.
+
 ### Project: Premier League Predictor (End-to-End MLOps System)
 As a flagship project in Zain's Machine Learning and MLOps portfolio, he developed the Premier League Predictor to forecast match outcomes and project final league standings.
+- **Date:** 2026
 - **GitHub:** github.com/Zain3627/pl_predictor
 - **Tech Stack:** Python 3.10, ZenML, MLflow, XGBoost, RandomForest, LogisticRegression, pandas, NumPy, Supabase (PostgreSQL), Pydantic, Streamlit.
 - **System Architecture:**
@@ -73,16 +84,45 @@ As a flagship project in Zain's Machine Learning and MLOps portfolio, he develop
   - *Automation & Frontend:* Cron-based scheduling triggers retraining when accuracy drops. Streamlit frontend displays predictions.
 
 ### Project: FPL Vision (AI-Powered Fantasy Premier League Assistant)
-This is one of Zain's favourite projects because he starts it following his passion. To showcase his predictive modeling skills, Zain built FPL Vision, a data-driven AI assistant designed to help Fantasy Premier League managers make optimized team decisions through player recommendations and points projections.
+This is one of Zain's favourite projects because he started it following his passion. To showcase his predictive modeling skills, Zain built FPL Vision, a data-driven AI assistant designed to help Fantasy Premier League managers make optimized team decisions through player recommendations and points projections.
+- **Date:** 2026
 - **GitHub:** github.com/Zain3627/Fantasy_Premier_League_Predictor
 - **System Architecture:** Fine-tuned XGBoost classifier aggregating data from the FPL REST API (700+ players, 20 teams). 
 - **Deployment & CI/CD:** Streamlit app deployed on Azure App Service with artifacts on Azure Blob Storage. GitHub Actions auto-deploys on data or code updates.
 
+
+
 ### Project: Real-Time Facial Recognition System
 In the domain of computer vision, Zain created an end-to-end Real-Time Facial Recognition System capable of identifying multiple identities and supporting seamless new user enrollment.
+- **Date:** 2025
 - **GitHub:** github.com/Zain3627/Facial-Recognition-System
 - **System Architecture:** Pre-trained FaceNet backbone with a fine-tuned transfer learning classification head. Uses MediaPipe for multi-face detection, generating 128-dimensional L2-normalized embeddings for cosine similarity matching.
 - **Performance & Deployment:** Achieved 98% accuracy on the LFW dataset (303 identities). Dockerized Streamlit app deployed on Hugging Face Spaces.
+
+### Project: WHO COVID-19 Global Daily Data Analysis
+To highlight his data science and Exploratory Data Analysis (EDA) capabilities, Zain conducted an extensive statistical analysis project on global pandemic trends.
+- **Date:** 2025
+- **GitHub:** github.com/Zain3627/WHO-COVID-19-global-daily-data-analysis-project
+- **Goal:** Uncover actionable insights about global case trends and country-level patterns.
+- **Scope:** In-depth EDA, data cleaning, feature engineering, and statistical visualization on a massive dataset of 250,000+ daily records across 200+ regions.
+
+### Project: Autonomous Point-to-Point Smart Car
+Applying his hardware and embedded systems knowledge, Zain built an autonomous ground vehicle capable of navigating to user-specified 2D coordinates.
+- **Date:** 2025
+- **Hardware Integration:** Arduino with onboard IMU-based localization.
+- **Communication & Control:** Utilized the MQTT protocol for wireless commands and integrated voice recognition for voice-based coordinate positioning.
+
+### Project: LAN Chat Room
+Exploring low-level network communication and software engineering, Zain developed a real-time LAN-based networking project supporting text, voice, and video media.
+- **Date:** 2024
+- **GitHub:** github.com/Zain3627/Chatroom
+- **Capacity:** Supports up to 10 concurrent users with seamless media switching.
+- **Tech Stack:** Python, socket programming, client-server architecture, multithreading for low-latency communication.
+
+### Project: Java Banking System
+As part of his early software engineering foundation, Zain developed a Java Banking System to handle core financial operations. 
+- **Date:** 2024
+- **Goal:** Solidify object-oriented programming (OOP) principles, system design, and fundamental data management prior to scaling up to distributed architectures.
 
 ### Project: Vision Transformer — Blood Cell Classification
 For his academic coursework in deep learning and medical imaging, Zain completed an advanced image classification project comparing modern transformer architectures against traditional CNNs.
@@ -99,23 +139,6 @@ Combining Human-Computer Interaction (HCI) with deep learning, Zain executed an 
 Demonstrating his expertise in scalable infrastructure, Zain engineered an academic distributed systems project that functions as an IoT-style weather data pipeline.
 - **Tech Stack:** Java microservices, PostgreSQL, Minikube, Kafka on Arch Linux.
 - **Infrastructure:** Leveraged Kubernetes objects including ConfigMaps, Secrets, PVCs, Services, and StatefulSets to ensure high availability and fault tolerance.
-
-### Project: WHO COVID-19 Global Daily Data Analysis
-To highlight his data science and Exploratory Data Analysis (EDA) capabilities, Zain conducted an extensive statistical analysis project on global pandemic trends.
-- **GitHub:** github.com/Zain3627/WHO-COVID-19-global-daily-data-analysis-project
-- **Goal:** Uncover actionable insights about global case trends and country-level patterns.
-- **Scope:** In-depth EDA, data cleaning, feature engineering, and statistical visualization on a massive dataset of 250,000+ daily records across 200+ regions.
-
-### Project: LAN Chat Room
-Exploring low-level network communication and software engineering, Zain developed a real-time LAN-based networking project supporting text, voice, and video media.
-- **GitHub:** github.com/Zain3627/Chatroom
-- **Capacity:** Supports up to 10 concurrent users with seamless media switching.
-- **Tech Stack:** Python, socket programming, client-server architecture, multithreading for low-latency communication.
-
-### Project: Autonomous Point-to-Point Smart Car
-Applying his hardware and embedded systems knowledge, Zain built an autonomous ground vehicle capable of navigating to user-specified 2D coordinates.
-- **Hardware Integration:** Arduino with onboard IMU-based localization.
-- **Communication & Control:** Utilized the MQTT protocol for wireless commands and integrated voice recognition for voice-based coordinate positioning.
 
 ---
 ## Research Experience & Publications
