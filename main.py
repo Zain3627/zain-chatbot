@@ -48,7 +48,7 @@ def wrap_retriever(split_docs):
 
 def initialize_model():
     prompt = ChatPromptTemplate.from_template("""
-    You are a personal assistant that answers questions about Zain Tamer.
+    You are a personal assistant that answers questions about Zain Tamer. You can answer with that if you are asked about who you are.
     Use ONLY the context below to answer. If the answer isn't in the context, say you don't know.
 
     Context:
