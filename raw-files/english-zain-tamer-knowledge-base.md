@@ -15,7 +15,9 @@
 | Kaggle | kaggle.com/zaintamer |
 | Portfolio | zaintamer.vercel.app |
 
-**Professional Identity:** Zain identifies as an AI/ML Engineer and MLOps practitioner. He is a final-year Computer Engineering student who builds and deploys production-grade ML systems, competes in programming contests, and coaches others.
+**Professional Identity:** Zain identifies as an AI Engineer, Software Developer, and Researcher. He is a final-semester Computer Engineering student who builds dependable end-to-end AI and software systems, studies and reproduces AI research, competes in programming contests, and teaches others what he learns.
+
+**Availability:** Zain is open to local, remote, and international opportunities. He is especially interested in AI and software engineering roles, research-minded product teams, graduate study and research connections, and teams that value learning and community.
 
 ---
 
@@ -24,25 +26,30 @@
 ### University Education: Arab Academy for Science, Technology & Maritime Transport (AAST)
 - **Degree:** Bachelor of Science in Computer Engineering
 - **Location:** Alexandria, Egypt
-- **Duration:** September 2022 – February 2027 (Expected graduation ~July 2027)
-- **CGPA:** 3.98 / 4.0 (Near-perfect GPA, consistently ranked among the top-performing students)
+- **Duration:** September 2022 – Present
+- **Expected Graduation:** February 2027
+- **Current Status:** Final semester
+- **CGPA:** 3.98 / 4.0
+- **Class Rank:** Currently ranked 2nd in his university class
 - **Academic Focus:** Artificial Intelligence, Machine Learning, Computer Vision, and MLOps.
 
 **Key Academic Coursework:**
+- **Mathematics:** Discrete Mathematics, Probability & Statistical Analysis, Numerical Methods
 - **Artificial Intelligence:** Artificial Intelligence, Image Processing & Pattern Recognition
-- **Machine Learning & Data:** Data Analytics & Optimization using Python, Probability & Statistical Analysis
+- **Machine Learning & Data:** Data Analytics & Optimization using Python
 - **Software Engineering:** Object-Oriented Programming, Java Programming, Systems Programming, Operating Systems
 - **Algorithms:** Data Structures & Algorithms, Computing Algorithms, Numerical Methods
 - **Systems:** Computer Architecture, Embedded Systems Design, Microprocessor Systems, Distributed & Parallel Systems
 - **Networking & Security:** Computer Networks, Advanced Networks, Cyber Security
 - **Databases:** Database Systems
+- **Human-Computer Interaction:** Introduction to Intelligent Human-Computer Interaction
 
 ### High School Education: Gharbiya STEM High School
 - **Degree:** STEM High School Diploma
 - **Location:** Tanta, Egypt
 - **Duration:** September 2019 – July 2022
 - **Achievements:** Graduated 2nd in school and ranked 34th nationally in senior year.
-- **Experience:** A highly competitive boarding school focused on project-based learning and scientific research. Zain completed three year-long interdisciplinary capstone projects, developing strong teamwork, time management, and adaptability.
+- **Experience:** Zain entered this competitive boarding school at age 15 and lived away from home for three years. He completed three year-long interdisciplinary capstone projects and developed independence, self-discipline, teamwork, communication, time management, and adaptability while collaborating with students from diverse backgrounds.
 
 ---
 
@@ -68,26 +75,27 @@ To demonstrate his expertise in Large Language Models (LLMs) and intelligent inf
 - **GitHub:** github.com/Zain3627/zain-chatbot/
 - **Tech Stack:** Python, RAG, FAISS, FastAPI, Hybrid Search, Docker, AWS EC2, REST API.
 - **System Architecture:**
-  - *Retrieval Pipeline:* Implemented a high-accuracy hybrid search pipeline combining dense vector retrieval (indexed via FAISS) with keyword matching using LangChain and LangSmith. 
+  - *Retrieval Pipeline:* Built a LangChain RAG pipeline integrating retrieval, prompt engineering, and LLM inference. Implemented hybrid retrieval with FAISS semantic search, BM25 keyword search, and LangChain EnsembleRetriever.
   - *Backend & Deployment:* Designed a modular, scalable architecture separating ingestion, retrieval, and inference components. Developed a FastAPI backend exposing REST endpoints, containerized the application with Docker, and deployed it to an AWS EC2 instance.
-- **Impact:** Delivered a production-ready LLM service featuring a chat interface and observability dashboards, demonstrating practical cloud deployment of modern GenAI applications.
+  - *Observability:* Integrated LangSmith tracing to monitor and debug retrieval and LLM executions.
+- **Impact:** Delivered a production-ready chatbot that answers questions over a custom knowledge base and demonstrates modern GenAI, backend, retrieval, observability, Docker, and AWS deployment skills.
 
 ### Project: Premier League Predictor (End-to-End MLOps System)
 As a flagship project in Zain's Machine Learning and MLOps portfolio, he developed the Premier League Predictor to forecast match outcomes and project final league standings.
 - **Date:** 2026
 - **GitHub:** github.com/Zain3627/pl_predictor
-- **Tech Stack:** Python 3.10, ZenML, MLflow, XGBoost, RandomForest, LogisticRegression, pandas, NumPy, Supabase (PostgreSQL), Pydantic, Streamlit.
+- **Tech Stack:** Python, ZenML, MLflow, Supabase PostgreSQL, SQL, ETL pipelines, AWS S3, AWS ECR, AWS EC2, Docker, cron, Streamlit, XGBoost, Random Forest, Logistic Regression, pandas, NumPy, and Pydantic.
 - **System Architecture:**
   - *Pipelines:* Data pipeline (fetch, clean, upload) and Prediction pipeline (ingest, train, evaluate, predict).
   - *MLflow:* Tracks experiments and model registry; auto-promotes the highest-accuracy model to a champion alias.
   - *Storage & Deployment:* Supabase PostgreSQL for datasets, AWS S3 for MLflow artifacts. Containerized with Docker, pushed to AWS ECR, and deployed to AWS EC2.
-  - *Automation & Frontend:* Cron-based scheduling triggers retraining when accuracy drops. Streamlit frontend displays predictions.
+  - *Automation & Frontend:* A weekly cron job evaluates live prediction accuracy and triggers the full retraining pipeline when accuracy falls below a threshold. The Streamlit dashboard displays fixture predictions and projected league standings.
 
 ### Project: FPL Vision (AI-Powered Fantasy Premier League Assistant)
 This is one of Zain's favourite projects because he started it following his passion. To showcase his predictive modeling skills, Zain built FPL Vision, a data-driven AI assistant designed to help Fantasy Premier League managers make optimized team decisions through player recommendations and points projections.
 - **Date:** 2026
 - **GitHub:** github.com/Zain3627/Fantasy_Premier_League_Predictor
-- **System Architecture:** Fine-tuned XGBoost classifier aggregating data from the FPL REST API (700+ players, 20 teams). 
+- **System Architecture:** Aggregated and engineered features from the FPL REST API for 700+ players across 20 teams. Trained an XGBoost model to predict each player's projected points, stored projections in PostgreSQL, and updated predicted points every gameweek.
 - **Deployment & CI/CD:** Streamlit app deployed on Azure App Service with artifacts on Azure Blob Storage. GitHub Actions auto-deploys on data or code updates.
 
 
@@ -122,7 +130,10 @@ Exploring low-level network communication and software engineering, Zain develop
 ### Project: Java Banking System
 As part of his early software engineering foundation, Zain developed a Java Banking System to handle core financial operations. 
 - **Date:** 2024
-- **Goal:** Solidify object-oriented programming (OOP) principles, system design, and fundamental data management prior to scaling up to distributed architectures.
+- **GitHub:** github.com/Zain3627/Banking-System-Java-Project
+- **Tech Stack:** Java, JavaFX, desktop UI, object-oriented programming, design patterns, and workflow design.
+- **Implementation:** Separated secure authentication from the post-login workflow and designed a clear interface for common banking operations and transaction handling.
+- **Goal:** Solidify object-oriented programming (OOP), system design, and fundamental data management prior to scaling up to distributed architectures.
 
 ### Project: Vision Transformer — Blood Cell Classification
 For his academic coursework in deep learning and medical imaging, Zain completed an advanced image classification project comparing modern transformer architectures against traditional CNNs.
@@ -148,17 +159,21 @@ Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Computer Vis
 
 ### AI Research Notes & Paper Reproductions
 - **GitHub:** github.com/Zain3627/ai-research-summary
-- **Overview:** An ongoing knowledge base of structured analyses and code reproductions of influential AI papers spanning ML, Vision, NLP, and MLOps. Summarizes methodologies and verifies published results.
+- **Status:** Ongoing
+- **Overview:** A continuously growing collection of structured analyses of influential papers across machine learning, deep learning, natural language processing, computer vision, large language models, and related AI fields.
+- **Contributions:** Documents methodologies, experimental setups, key findings, strengths, limitations, implementation insights, and future research directions through a consistent analytical framework. Selected papers are reproduced to verify published results and deepen implementation understanding.
+- **Skills:** Research analysis, literature review, scientific writing, paper reproduction, experimental design, and machine learning.
 
 ### Research: Data Augmentation & Hyperparameter Tuning for Image Classification
 - **GitHub:** github.com/Zain3627/An-Experimental-Analysis-of-Data-Augmentation-and-Hyperparameter-Tuning-for-Image-Classification
 - **Duration:** October 2025 – December 2025 (Co-authored with Adham Mahmoud Waheeb)
-- **Overview:** Compared handcrafted CNNs vs. EfficientNet-B0 on the Caltech-101 dataset. Proposed and evaluated novel augmentation methods including Pairwise Channel Transfer, Object Occlusion, and Novel Masking.
+- **Overview:** Conducted controlled experiments investigating how data augmentation and hyperparameter optimization affect image-classification performance across multiple deep-learning architectures. Compared architectures under identical training conditions and evaluated accuracy, convergence, and generalization using quantitative analysis and visualizations.
+- **Technical Detail:** Compared handcrafted CNNs with EfficientNet-B0 on Caltech-101 and evaluated augmentation approaches including Pairwise Channel Transfer, Object Occlusion, and Novel Masking.
 
 ### Research: Comparison of Quicksort and BFPRT
 - **GitHub:** github.com/Zain3627/quicksort-bfprt-kth-selection-analysis
 - **Date:** February 2025
-- **Overview:** Algorithmic performance analysis of Quicksort versus BFPRT (Median of Medians) for the K-th Element Selection Problem across scaling problem sizes.
+- **Overview:** Implemented Quicksort-based and BFPRT selection algorithms from scratch, benchmarked deterministic and randomized selection across multiple dataset sizes, compared empirical runtime with theoretical complexity, and analyzed their performance trade-offs.
 
 ---
 
@@ -187,11 +202,13 @@ Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Computer Vis
 ---
 
 ## Soft Skills & Working Style
-- **Leadership & Mentorship:** Coaches a Competitive Programming club, leads AWS cloud workshops, and actively mentors 30+ students.
+- **Discipline & Self-Management:** Entered boarding school at age 15, later managed university life independently, and maintained a 3.98/4.0 CGPA while ranking second in his class.
+- **Flexibility & Adaptability:** Learned to establish routines, connect with different people, and keep progressing after moving away from home at a young age.
+- **Leadership & Mentorship:** Founded the M2C Mathematics & Mechanics Club, coaches a Competitive Programming club, supports AWS cloud workshops, and creates learning environments for other students.
 - **Communication:** Skilled at breaking down complex ML architectures and algorithmic concepts for beginners.
 - **Resilience & Multitasking:** Maintains a 3.98 GPA while actively juggling applied ML internships, CP coaching, research, and independent cloud deployments.
 - **Systems Thinking:** Approaches engineering through lifecycles and pipelines (from data ingestion to production retraining) rather than isolated scripts.
-- **Teamwork** — co-authored research, collaborated on group academic projects
+- **Teamwork:** Built through ECPC problem solving under time pressure, team software projects, co-authored research, tutoring, technical workshops, and three high-school capstones.
 
 ---
 
@@ -199,33 +216,102 @@ Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Computer Vis
 
 | Competition / Achievement | Date | Result |
 |---|---|---|
+| ECPC 2026 Qualification Round | August 2026 | 22nd place; qualified for the ECPC Finals |
+| ECPC 2026 Finals | August 2026 | 166th place among Egypt's strongest qualifying collegiate teams |
 | HackerRank × CPClub AAST Event | April 2026 | 🥈 2nd Place |
 | Codeforces Specialist | November 2025 | Max rating 1448 (Top ~2%) |
-| ECPC (Egyptian Collegiate Programming Contest) | July 2025 | Qualified |
+| ECPC 2025 Qualification Round | July 2025 | 37th place; the team improved by 15 places in 2026 |
 | Zindi Financial Inclusion in Africa | June 2025 | Ranked 15th out of 2000+ participants |
 | IEEEXtreme Programming Competition | October 2024 | Top 2% in Egypt, Top 20% Worldwide (8000+ teams) |
+| International Youth Math Challenge | December 2020 | Bronze Honour; finalist; 13 points; top 15% of participants |
+| NASA Space Apps Cairo Hackathon | October 2020 | Recognized for exceptional contribution and online participation |
+| CERN Beamline for Schools | June 2020 | Submitted an experimental proposal with Gharbiya STEM's Stemadrons team |
+| NASA Space Apps COVID-19 Challenge | May 2020 | Recognized for exceptional contribution and online participation |
+| Octans Math Tournament | 2020 | Participated in the international preliminary round |
 
 ---
 
 ## Certificates & Professional Development
 
-| Certificate | Issuer | Date |
-|---|---|---|
-| Artificial Intelligence Engineer 1 | Coursera – IBM | October 2025 |
-| Sprints × Microsoft Summer Camp (AI & ML) | Microsoft / Sprints | October 2025 |
-| IBM Software Developer Roadmap | Coursera – IBM | October 2024 |
+### 2026 ECPC Finals Qualification
+- **Date:** August 2026
+- **Achievement:** Placed 22nd in qualification and advanced to the Egyptian Collegiate Programming Contest Finals, placing 166th in the finals. This improved the team's qualification result from 37th in 2025 to 22nd in 2026.
+
+### HackerRank × CPClub AAST Event
+- **Date:** April 2026
+- **Achievement:** Placed 2nd in an algorithmic problem-solving event, demonstrating data-structure and algorithm knowledge, implementation speed, and debugging under strict time constraints.
+
+### Machine Learning Engineer Internship — Digital Egypt Pioneers Initiative
+- **Date:** December 2025
+- **Achievement:** Completed a 180-hour applied ML programme covering data engineering, computer vision, NLP, predictive analytics, and cloud deployment, including a team capstone and end-to-end deployment with Azure services.
+
+### Codeforces Specialist
+- **Date:** November 2025
+- **Achievement:** Reached Specialist rank with a rating of 1448 after solving hundreds of algorithmic problems and strengthening graph, dynamic-programming, greedy, and binary-search skills.
+
+### Artificial Intelligence Engineer 1
+- **Date:** October 2025
+- **Achievement:** Completed the Coursera learning path covering machine learning, neural networks, NLP, and engineering-oriented AI implementation.
+
+### Sprints × Microsoft Summer Camp — AI and Machine Learning
+- **Date:** October 2025
+- **Achievement:** Completed a hands-on AI and ML programme covering preprocessing, feature engineering, train/test validation, model building, and evaluation.
+
+### ECPC Qualification Participation
+- **Date:** July 2025
+- **Achievement:** Competed in the Egyptian Collegiate Programming Contest qualification round, practicing collaborative problem solving, optimization, debugging, and verification under pressure.
+
+### Zindi Financial Inclusion in Africa Competition
+- **Date:** June 2025
+- **Achievement:** Ranked 15th among more than 2,000 participants by building and iteratively improving an end-to-end tabular machine-learning pipeline.
+
+### IEEEXtreme Programming Competition
+- **Date:** October 2024
+- **Achievement:** Ranked in the top 2% in Egypt and top 20% worldwide among more than 8,000 teams during a continuous 24-hour algorithmic contest.
+
+### Software Engineering Software Developer L1
+- **Date:** October 2024
+- **Achievement:** Completed a software-developer certification covering OOP, Git, debugging, testing, clean code, the SDLC, and collaborative engineering workflows.
+
+### International Youth Math Challenge — Bronze Honour
+- **Date:** December 2020
+- **Achievement:** Reached the final round, scored 13 points in a supervised 30-question examination, and placed in the top 15% of participants.
+
+### NASA Space Apps Cairo Hackathon
+- **Date:** October 2020
+- **Achievement:** Recognized by IEEE Young Professionals Egypt and the NASA Space Apps Cairo organizers for exceptional contribution and online participation in the sixth edition.
+
+### CERN Beamline for Schools Competition
+- **Date:** June 2020
+- **Achievement:** Helped Gharbiya STEM's Stemadrons team submit an experimental proposal to the seventh international CERN Beamline for Schools competition.
+
+### NASA Space Apps COVID-19 Challenge
+- **Date:** May 2020
+- **Achievement:** Recognized for exceptional contribution and online participation in the May 30–31 virtual hackathon focused on a real-world global challenge.
+
+### Octans Math Tournament
+- **Date:** 2020
+- **Achievement:** Participated in the preliminary round of the international mathematics tournament.
 
 ---
 
 ## Volunteering & Extracurricular Leadership
 
-### AWS Student Builder Group at AAST (Team Member)
+### M2C — Mathematics & Mechanics Club (Founder)
+- **Period:** Gharbiya STEM High School
+- **Origin:** Zain's interest in advanced mathematics and mechanics led him to propose and found M2C with support from a teacher.
+- **Contributions:** Brought together students with a shared interest, ran tutoring sessions for classmates, prepared clear explanation resources, and created solved test banks from international competitions and examinations.
+- **Lasting Impact:** The resources continued helping younger students after the founders graduated. M2C was Zain's first experience building a learning community and taught him leadership, communication, teamwork, and the value of sharing knowledge.
+
+### AWS Student Builder Group at AAST (Core Team Member)
 - **Duration:** March 2026 – Present
-- **Impact:** Organized cloud practitioner training and led a 2-hour hands-on workshop on AWS services (EC2, S3, IAM, CloudWatch) for 20+ students, including a live EC2 deployment demo.
+- **Contributions:** Helped deliver a two-workshop journey covering AWS Regions and Availability Zones, IaaS/PaaS/SaaS, scalability, fault tolerance, high availability, IAM, security, EC2, S3, and RDS. Guided AWS Skill Builder labs and helped students launch a web page on EC2.
+- **Impact:** Participant feedback included a shift from knowing little about cloud computing to seriously considering it as a career path.
 
 ### AAST Competitive Programming Club (Coach)
 - **Duration:** September 2025 – Present
-- **Impact:** Coached 30+ students across 15+ sessions covering C++ STL, binary search, greedy algorithms, and competitive programming fundamentals. Prepared contest materials and problems.
+- **Contributions:** Leads recurring algorithm and structured problem-solving sessions, tutoring, and recorded upsolving. Completed more than 16 coaching sessions and turns contest solutions into reusable lessons.
+- **Events:** Helps organize competitive hackathons with HackerRank so students can practice problem solving under pressure.
 
 ---
 
@@ -253,15 +339,15 @@ Zain is a **methodical builder** who values shipping complete, production-ready 
 
 ## Current Focus Areas & Future Goals
 
-### Current Focus (Mid-2026)
-- Completing B.Sc. in Computer Engineering at AAST.
-- Deepening expertise in modern ML deployment infrastructure: AWS Bedrock, SageMaker, vLLM, and agentic RAG systems.
-- Expanding the PL Predictor project to Azure and integrating computer vision components via SoccerNet.
-- Developing this personal RAG bot and knowledge base.
-- Exploring startup applications in AI automation, computer vision, and coding education.
+### Current Focus (2026–2027)
+- Completing the final semester of the B.Sc. in Computer Engineering at AAST and preparing to graduate in February 2027.
+- Building a public GitHub research project that analyzes and reproduces influential and fast-moving AI papers.
+- Seeking an AI or software engineering role focused on dependable solutions and learning with experienced teams.
+- Exploring AI master's programmes to deepen research foundations and contribute to meaningful advances.
+- Continuing technical community work through competitive-programming coaching and AWS workshops.
 
 ### Long-Term Goals
-- **Role:** Become a production-grade ML/MLOps Engineer operating AI systems at scale.
+- **Role:** Grow as an AI engineer, software developer, and researcher who can operate dependable systems at scale.
 - **Impact:** Bridge the gap between academic research and real-world deployment.
 - **Community:** Grow as a technical leader within the Egyptian AI/tech ecosystem.
 - **Research:** Conduct applied research at the intersection of computer vision and sports analytics.

@@ -58,10 +58,10 @@ def wrap_retriever(split_docs):
     )
 
     vectorstore = FAISS.from_documents(split_docs, embeddings)
-    dense_retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
+    dense_retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 
     bm25_retriever = BM25Retriever.from_documents(split_docs)
-    bm25_retriever.k = 5
+    bm25_retriever.k = 3
 
     retriever = EnsembleRetriever(
         retrievers=[bm25_retriever, dense_retriever],
@@ -84,10 +84,12 @@ def initialize_model():
     model = init_chat_model(
         "google_genai:gemma-4-26b-a4b-it",
         temperature=1.0,
+        thinking_level="minimal",
     )
     return prompt, model
 
 def merge_selected_chunks(docs):
+    docs = docs[:4]
     return "\n\n".join(
         f"[{d.metadata.get('subsection', '')}]\n{d.page_content}"
         for d in docs
