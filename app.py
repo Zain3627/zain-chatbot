@@ -132,9 +132,9 @@ st.markdown("""
 
 
 # ── Response generator (replace with your logic) ──────────────────────────────
-def response_generator(user_message: str) -> str:
+def response_generator(user_message: str, history: list[dict[str, str]]) -> str:
     time.sleep(0.2)
-    return answer_question(user_message)
+    return answer_question(user_message, history)
 
 
 # ── Session state ──────────────────────────────────────────────────────────────
@@ -206,7 +206,14 @@ if "pending" in st.session_state and st.session_state.pending:
     st.session_state.pending = None
 
     st.session_state.messages.append({"role": "user", "content": text})
-    reply = response_generator(text)
+    recent_history = [
+        {
+            "role": "assistant" if message["role"] == "bot" else "user",
+            "content": message["content"],
+        }
+        for message in st.session_state.messages[1:-1][-3:]
+    ]
+    reply = response_generator(text, recent_history)
     st.session_state.messages.append({"role": "bot", "content": reply})
     st.rerun()
 

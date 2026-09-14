@@ -13,6 +13,7 @@ A production-ready **Retrieval-Augmented Generation (RAG)** chatbot that answers
 - ☁️ Deployable on AWS EC2
 - 📊 LangSmith tracing for observability
 - 🚀 Cached pipeline for low-latency inference
+- 💬 Three-message conversation memory
 
 ---
 
@@ -192,9 +193,16 @@ Ask a question about the knowledge base.
 
 ```json
 {
-    "question": "Who is Zain Tamer?"
+    "question": "What did he build it with?",
+    "history": [
+        {"role": "user", "content": "Tell me about Zain's latest project."},
+        {"role": "assistant", "content": "Zain built a RAG chatbot."}
+    ]
 }
 ```
+
+`history` is optional. When supplied, only the latest three messages are used to
+resolve follow-up questions and retrieve relevant knowledge-base content.
 
 ### Response
 
@@ -302,7 +310,7 @@ Deployment stack:
 - Multi-document ingestion
 - Metadata filtering
 - Cross-Encoder reranking
-- Conversation memory
+- Persistent conversation memory
 - User authentication
 - Rate limiting
 - Evaluation pipeline with retrieval metrics

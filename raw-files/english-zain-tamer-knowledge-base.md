@@ -212,7 +212,7 @@ Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Computer Vis
 
 ---
 
-## Competitions, Honors & Achievements
+## Competitions, Honors , Certificates, & Achievements 
 
 | Competition / Achievement | Date | Result |
 |---|---|---|
@@ -233,11 +233,11 @@ Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Computer Vis
 
 ## Certificates & Professional Development
 
-### 2026 ECPC Finals Qualification
+### 2026 ECPC Finals Qualification Competition
 - **Date:** August 2026
 - **Achievement:** Placed 22nd in qualification and advanced to the Egyptian Collegiate Programming Contest Finals, placing 166th in the finals. This improved the team's qualification result from 37th in 2025 to 22nd in 2026.
 
-### HackerRank × CPClub AAST Event
+### HackerRank × CPClub AAST Event Competition
 - **Date:** April 2026
 - **Achievement:** Placed 2nd in an algorithmic problem-solving event, demonstrating data-structure and algorithm knowledge, implementation speed, and debugging under strict time constraints.
 
