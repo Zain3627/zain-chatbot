@@ -201,8 +201,10 @@ Ask a question about the knowledge base.
 }
 ```
 
-`history` is optional. When supplied, only the latest three messages are used to
-resolve follow-up questions and retrieve relevant knowledge-base content.
+`history` is optional. When supplied, up to three recent messages (400 characters
+each) help resolve follow-up questions. Retrieval uses the latest user question
+(up to 180 characters) and the current question, without embedding previous
+assistant answers.
 
 ### Response
 
@@ -296,6 +298,7 @@ Deployment stack:
 
 - Pipeline initialized once during FastAPI startup
 - `lru_cache()` prevents rebuilding the retrieval pipeline
+- Bounded conversation history keeps retrieval and model prompts small
 - FAISS enables fast approximate nearest-neighbor search
 - BM25 improves keyword retrieval
 - Hybrid Search balances semantic similarity and lexical matching

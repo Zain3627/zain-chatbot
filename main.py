@@ -19,6 +19,8 @@ from langchain_classic.retrievers.ensemble import EnsembleRetriever
 
 load_dotenv()
 MAX_HISTORY_MESSAGES = 3
+MAX_HISTORY_CONTENT_CHARS = 400
+MAX_RETRIEVAL_HISTORY_CHARS = 180
 
 file_paths = [
     "raw-files/arabic-egypt-zain-tamer-knowledge-base.md",
@@ -118,9 +120,21 @@ def format_history(history: Sequence[ConversationMessage] | None) -> str:
         return "No previous messages."
 
     return "\n".join(
-        f"{message.role.capitalize()}: {message.content}"
+        f"{message.role.capitalize()}: {message.content[:MAX_HISTORY_CONTENT_CHARS]}"
         for message in history[-MAX_HISTORY_MESSAGES:]
     )
+
+
+def retrieval_question(question: str, history: Sequence[ConversationMessage] | None) -> str:
+    # Previous assistant answers can be long and contain terms unrelated to the
+    # follow-up. The last user question supplies the topic with a small bound.
+    last_user_question = next(
+        (message.content for message in reversed(history or []) if message.role == "user"),
+        None,
+    )
+    if last_user_question:
+        return f"{last_user_question[:MAX_RETRIEVAL_HISTORY_CHARS]}\n{question}"
+    return question
 
 
 @lru_cache(maxsize=1)
@@ -140,7 +154,7 @@ def run_chain(
     history: Sequence[ConversationMessage] | None = None,
 ) -> str:
     history_text = format_history(history)
-    retrieval_query = f"{history_text}\nUser: {question}"
+    retrieval_query = retrieval_question(question, history)
     context = merge_selected_chunks(retriever.invoke(retrieval_query))
     prompt_value = prompt.invoke(
         {"context": context, "history": history_text, "question": question}

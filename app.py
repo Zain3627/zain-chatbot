@@ -1,5 +1,4 @@
 import streamlit as st
-import time
 from main import answer_question
 
 # ── Page config ────────────────────────────────────────────────────────────────
@@ -133,7 +132,6 @@ st.markdown("""
 
 # ── Response generator (replace with your logic) ──────────────────────────────
 def response_generator(user_message: str, history: list[dict[str, str]]) -> str:
-    time.sleep(0.2)
     return answer_question(user_message, history)
 
 
